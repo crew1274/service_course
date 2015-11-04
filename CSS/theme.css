@@ -1,0 +1,81 @@
+@import "custom-blue/jquery-ui-1.8.5.custom.css";
+
+
+table{
+	font-family: "微軟正黑體", "新細明體", "標楷體","細明體";
+}
+body{
+    text-align: center;
+    background-color: #000;
+
+}
+
+.page_container {
+	text-align: center;
+	position: relative;
+	width:1000px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	background-color: #000;
+	visibility: visible;
+}
+.page_header {
+	position: relative;
+	width:100%;
+	height:115px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(base/images/background.jpg);
+	background-repeat: no-repeat;
+}
+.menuDiv{
+	text-align:left;
+	top: 10%;
+}
+.contentDiv{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	padding-top: 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.contentDiv table{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.align_center{
+	text-align: center;
+}
+.data_content table .field_title{
+	text-indent: 5px;
+	font-weight: bold;
+}
+.data_content table .field_content{
+	text-indent: 10px;
+}
+
+.data_content table .sub_table{
+	text-align: center;
+	vertical-align:top;
+}
+.data_content table{
+	text-align: left;
+	font-size:14px;
+	background-color: #FFF;
+}
+.data_content{
+    	margin-bottom: 20px;
+	text-align:center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
