@@ -1,30 +1,29 @@
  <?php    
-    include("class.phpmailer.php"); //¶×¤JPHPMailerÃþ§O       
+    include("class.phpmailer.php"); //åŒ¯å…¥PHPMaileré¡žåˆ¥       
           
-    $mail= new PHPMailer(); //«Ø¥ß·sª«¥ó        
-    $mail->IsSMTP(); //³]©w¨Ï¥ÎSMTP¤è¦¡±H«H        
-    $mail->SMTPAuth = true; //³]©wSMTP»Ý­nÅçÃÒ        
-    $mail->SMTPSecure = "ssl"; // GmailªºSMTP¥D¾÷»Ý­n¨Ï¥ÎSSL³s½u   
-    $mail->Host = "smtp.gmail.com"; //GamilªºSMTP¥D¾÷        
-    $mail->Port = 465;  //GamilªºSMTP¥D¾÷ªºSMTP°ð¦ì¬°465°ð¡C        
-    $mail->CharSet = "big5"; //³]©w¶l¥ó½s½X        
+    $mail= new PHPMailer(); //å»ºç«‹æ–°ç‰©ä»¶        
+    $mail->IsSMTP(); //è¨­å®šä½¿ç”¨SMTPæ–¹å¼å¯„ä¿¡        
+    $mail->SMTPAuth = true; //è¨­å®šSMTPéœ€è¦é©—è­‰        
+    $mail->SMTPSecure = "ssl"; // Gmailçš„SMTPä¸»æ©Ÿéœ€è¦ä½¿ç”¨SSLé€£ç·š   
+    $mail->Host = "smtp.gmail.com"; //Gamilçš„SMTPä¸»æ©Ÿ        
+    $mail->Port = 465;  //Gamilçš„SMTPä¸»æ©Ÿçš„SMTPåŸ ä½ç‚º465åŸ ã€‚        
+    $mail->CharSet = "big5"; //è¨­å®šéƒµä»¶ç·¨ç¢¼        
           
-    $mail->Username = "50156gm@gmail.com"; //³]©wÅçÃÒ±b¸¹        
-    $mail->Password = "em50156em"; //³]©wÅçÃÒ±K½X        
+    $mail->Username = ""; //è¨­å®šé©—è­‰å¸³è™Ÿ        
+    $mail->Password = ""; //è¨­å®šé©—è­‰å¯†ç¢¼        
           
-    $mail->From = "50156gm@gmail.com"; //³]©w±H¥óªÌ«H½c        
-    $mail->FromName = "½Ò°È²Õ"; //³]©w±H¥óªÌ©m¦W        
+    $mail->From = ""; //è¨­å®šå¯„ä»¶è€…ä¿¡ç®±        
+    $mail->FromName = ""; //è¨­å®šå¯„ä»¶è€…å§“å        
           
-    $mail->Subject = "ªA°È¾Ç²ßºô¯¸³qª¾"; //³]©w¶l¥ó¼ÐÃD        
-    $mail->Body = "¦³¦Ñ®v·s¼WªA°È¾Ç²ß½Òµ{¤F®@ !     
-    "; //³]©w¶l¥ó¤º®e        
-    $mail->IsHTML(true); //³]©w¶l¥ó¤º®e¬°HTML        
-    $mail->AddAddress("50156gm@gmail.com", "½Ò°È²Õ"); //³]©w¦¬¥óªÌ¶l¥ó¤Î¦WºÙ        
+    $mail->Subject = ""; //è¨­å®šéƒµä»¶æ¨™é¡Œ        
+    $mail->Body = ""; //è¨­å®šéƒµä»¶å…§å®¹        
+    $mail->IsHTML(true); //è¨­å®šéƒµä»¶å…§å®¹ç‚ºHTML        
+    $mail->AddAddress("", ""); //è¨­å®šæ”¶ä»¶è€…éƒµä»¶åŠåç¨±        
           
     if(!$mail->Send()) {        
     echo "Mailer Error: " . $mail->ErrorInfo;        
     } else {        
-    echo "¤w¸gÀ°±zÀx¦s±z·s¼Wªº½Òµ{¡A¨Ã±H«H³qª¾½Ò°È²Õ­t³d¤H";        
+    echo "å·²ç¶“å¹«æ‚¨å„²å­˜æ‚¨æ–°å¢žçš„èª²ç¨‹ï¼Œä¸¦å¯„ä¿¡é€šçŸ¥èª²å‹™çµ„è² è²¬äºº";        
     }    
 	
 	?>
