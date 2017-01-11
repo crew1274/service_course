@@ -28,10 +28,10 @@ if ($t["mon"] > 3 and $t["mon"] < 9)
     $mail->Port = 465;  //Gamil的SMTP主機的SMTP埠位為465埠。        
     $mail->CharSet = "utf-8"; //設定郵件編碼        
           
-    $mail->Username = "50156gm@gmail.com"; //設定驗證帳號        
-    $mail->Password = "em50156em"; //設定驗證密碼        
+    $mail->Username = ; //設定驗證帳號        
+    $mail->Password = ; //設定驗證密碼        
           
-    $mail->From = "50156gm@gmail.com"; //設定寄件者信箱        
+    $mail->From = ; //設定寄件者信箱        
     $mail->FromName = "課務組"; //設定寄件者姓名        
           
     $mail->Subject = "服務學習網站通知"; //設定郵件標題        
